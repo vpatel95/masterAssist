@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Log;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -55,12 +56,9 @@ class UserController extends Controller
 
     public function getDashboard() {
 
-        $user = Auth::user();
-        if($user->category == 'student') {
-            return view('index', ['user' => $user]);
-        } else if($user->category == 'teacher') {
-            return view('index',['user' => $user]);
-        }
+        $category = Auth::user()->getRole();
+        $uri = $category . '.index';
+        return view($uri, ['user' => Auth::user()]);
     	
     }
 }
