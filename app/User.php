@@ -13,4 +13,5 @@ class User extends Model implements Authenticatable
     {
         return $this->category;
     }
+
 }
