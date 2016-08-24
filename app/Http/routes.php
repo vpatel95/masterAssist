@@ -11,6 +11,27 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => ['web']], function() {
+
+	Route::get('/', function() {
+		return view('login.pages.welcome');
+	});
+
+	Route::post('/login', [
+		'uses' => 'UserController@login',
+		'as' => 'login'
+	]);
+
+	Route::post('/register', [
+		'uses' => 'UserController@register',
+		'as' => 'register'
+	]);
+
+	Route::get('dashboard', [
+		'uses' => 'UserController@getDashboard',
+		'middleware' => 'auth',
+		'as' => 'dashboard'
+	]);
+
+
 });
