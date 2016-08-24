@@ -13,19 +13,24 @@ class UserController extends Controller
 
     	$this->validate($request, [
     		'email' => 'required|email|unique:users',
-    		'password' => 'required|min:4',
-    		'category' => 'required'
+    		'password' => 'required|min:4'
     	]);
 
     	$email = $request['email'];
     	$password = $request['password'];
-    	$category = $request['category'];
 
     	$user = new User();
 
     	$user->email = $email;
     	$user->password = bcrypt($password);
-    	$user->category = $category;
+    	
+        $email_t = ends_with($email, '@srmuniv.ac.in');
+        $email_s = ends_with($email, '@srmuniv.edu.in');
+
+            if($email_t)
+                $user->category = 'teacher';
+            else if($email_s)
+                $user->category = 'student';
 
     	$user->save();
 
@@ -49,6 +54,14 @@ class UserController extends Controller
     }
 
     public function getDashboard() {
-    	return view('index',['user' => Auth::user()]);
+
+        $user = Auth::user();
+        if($user->category == 'student') {
+            return view('index', ['user' => $user]);
+        } else if($user->category == 'teacher') {
+            return view('index',['user' => $user]);
+        }
+    	
     }
 }
+    

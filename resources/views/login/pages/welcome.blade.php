@@ -31,9 +31,6 @@
 		<div class="form-group">
 			<input type="password" name="r_password" placeholder="Retype Password" class="form-control">
 		</div>
-		<div class="form-group">
-			<input type="text" name="category" placeholder="Student/teacher" class="form-control">
-		</div>
 		<div>
 			<button type="submit" class="btn btn-primary">Register</button>
 			<input type="hidden" name="_token" value="{{ Session::token() }}">
