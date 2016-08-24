@@ -32,8 +32,8 @@
 }
 .btnreglogin{
 	border: 1.5px solid #a6bae2;
-	color: #fff;
-	background: transparent;
+	color: #005266;
+	background: #fff;
 	border-radius: 0px;
 	font-family: 'Titillium Web', sans-serif;
 	margin-right: 10px;
@@ -46,6 +46,41 @@
 	color: #fff;
 	
 }
+
+/*chaging background color when user click modal*/
+.modal-backdrop {
+  
+}
+
+.modal-content {
+  background-color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: 0px;
+}
+.modal-body {
+  /*border-top:2px solid #007a99;*/
+  border-radius: 0px;
+}
+
+.modal-header{
+	text-align: center;
+	color: #fff;
+	font-weight: 2px;
+	padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #0480be;
+    border-radius: 0px;
+}
+
+.aboutcontainer{
+	height: 100vh;
+	width: 100%;
+}
+
+.error{
+	border: 1px solid red;
+}
+
 
 
 
