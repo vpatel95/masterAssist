@@ -1,0 +1,53 @@
+.intro{
+	/*background-image: url(bg2.jpg);
+	background-size: cover;*/
+	height: 100vh;
+	width: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	color: #fff;
+	position: relative;
+    /*background: url('bgup.gif') repeat; 
+    background:url('bg2.jpg') no-repeat;*/
+        background: url('bgup.gif') repeat, url('bg2.jpg') no-repeat;
+    background-image: url("bgup.gif"), url("bg2.jpg");
+    background-position-x: initial, initial;
+    background-position-y: initial, initial;
+    background-size: auto auto, 100% 100%;
+    background-repeat-x: repeat, no-repeat;
+    background-repeat-y: repeat, no-repeat;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
+	
+}
+
+.introhead{
+	font-family: 'Titillium Web', sans-serif;
+	color: 	#a6bae2;
+	font-size: 5em;
+	text-align: center;
+	padding-top: 18%;
+	text-shadow: 0px 0px 12px rgba(0, 255, 204, 0.6);
+}
+.btnreglogin{
+	border: 1.5px solid #a6bae2;
+	color: #fff;
+	background: transparent;
+	border-radius: 0px;
+	font-family: 'Titillium Web', sans-serif;
+	margin-right: 10px;
+}
+
+.btnreglogin:hover{
+	border: 1.9px solid #fff;
+	background-color: transparent;
+	transition: all 0.6s;
+	color: #fff;
+}
+
+
+
+  
+  
+  
