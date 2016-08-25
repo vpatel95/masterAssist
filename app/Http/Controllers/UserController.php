@@ -62,7 +62,7 @@ class UserController extends Controller
 
         $user = Auth::user();
         $category = $user->getRole();
-        $uri = $category . '.index';
+        $uri = $category . '.dashboard';
 
         Log::info($user->email . '---> Dashboard');
         return view($uri, ['user' => Auth::user()]);
