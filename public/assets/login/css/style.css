@@ -8,8 +8,8 @@
 	position: relative;
     /*background: url('bgup.gif') repeat; 
     background:url('bg2.jpg') no-repeat;*/
-        background: url('bgup.gif') repeat, url('bg2.jpg') no-repeat;
-    background-image: url("bgup.gif"), url("bg2.jpg");
+        background: url('../img/bgup.gif') repeat, url('../img/bg2.jpg') no-repeat;
+    background-image: url("../img/bgup.gif"), url("../img/bg2.jpg");
     background-position-x: initial, initial;
     background-position-y: initial, initial;
     background-size: auto auto, 100% 100%;
