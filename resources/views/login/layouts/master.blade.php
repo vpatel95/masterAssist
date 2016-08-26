@@ -10,5 +10,7 @@
 	<main>
 		@yield('content')
 	</main>
+
+	@include('login.includes.scripts')
 </body>
 </html>
