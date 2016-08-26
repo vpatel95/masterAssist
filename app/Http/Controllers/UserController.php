@@ -24,7 +24,7 @@ class UserController extends Controller
 
     	$user->email = $email;
     	$user->password = bcrypt($password);
-    	
+
         $email_t = ends_with($email, '@srmuniv.ac.in');
         $email_s = ends_with($email, '@srmuniv.edu.in');
 
@@ -66,7 +66,6 @@ class UserController extends Controller
 
         Log::info($user->email . '---> Dashboard');
         return view($uri, ['user' => Auth::user()]);
-    	
+
     }
 }
-    

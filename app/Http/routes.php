@@ -33,5 +33,8 @@ Route::group(['middleware' => ['web']], function() {
 		'as' => 'dashboard'
 	]);
 
-
+	Route::post('username', [
+		'uses' => 'UserController@username',
+		'as' => 'username'
+	]);
 });

@@ -1,9 +1,9 @@
 
 function validatePassword(){
 
-	var password = document.getElementById("password"), 
+	var password = document.getElementById("password"),
     	confirm_password = document.getElementById("confirm_password");
-  	
+
   	if(password.value != confirm_password.value) {
     	confirm_password.setCustomValidity("Passwords Don't Match");
     	$('#confirm_password').addClass('error');
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	$('#form_reg').submit(function(event) {
 		event.preventDefault();
 		$.ajax({
-			url : url,
+			url : '{{ route('username') }}',
 			method : 'POST',
 			data : {
 				username : $('input[name=username]').val(),
