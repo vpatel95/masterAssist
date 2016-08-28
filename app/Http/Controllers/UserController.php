@@ -37,8 +37,6 @@ class UserController extends Controller
 
     	Auth::login($user);
 
-        Log::info($user->email . 'Registered');
-
        	return redirect()->route('dashboard');
     }
 
@@ -48,8 +46,6 @@ class UserController extends Controller
     		'email' => 'required',
     		'password' => 'required'
     	]);
-
-        Log::info('Login request by ' . Auth::user()->email);
 
     	if(Auth::attempt(['email' => $request['email'], 'password' => $request['password']])) {
     		return redirect()->route('dashboard');
@@ -63,8 +59,7 @@ class UserController extends Controller
         $user = Auth::user();
         $category = $user->getRole();
         $uri = $category . '.dashboard';
-
-        Log::info($user->email . '---> Dashboard');
+        
         return view($uri, ['user' => Auth::user()]);
 
     }
