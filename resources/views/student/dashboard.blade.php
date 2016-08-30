@@ -8,12 +8,13 @@
         <link rel="stylesheet" type="text/css" href="{{ URL::to('assets/css/bootstrap.min.css')}}">
         <link rel="stylesheet" type="text/css" href="{{ URL::to('assets/material-bootstrap/css/mdb.min.css')}}">
         <link rel="stylesheet" type="text/css" href="{{ URL::to('assets/student/css/dashboard.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::to('assets/font-awesome-4.6.3/css/font-awesome.css')}}">
 
         
     </head>
     <body>
         <div class="wrapper">
-        <div class="sidebar" data-image="assets/img/sidebar-5.jpg">
+        <div class="sidebar">
 
             <div class="sidebar-wrapper">
             <div class="logo">
@@ -29,24 +30,28 @@
             <ul class="nav">
                 <li>
                     <a href="#">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
                         
                         <p>DASHBOARD</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
+                        <i class="fa fa-rss" aria-hidden="true"></i>
                         
                         <p>CHANNELS</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
                         
                         <p>ACCOUNT</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
+                        <i class="fa fa-life-ring" aria-hidden="true"></i>
                         
                         <p>HELP</p>
                     </a>
@@ -81,6 +86,59 @@
                 </div>
             </div>
         </nav>
+                        <!--CARDS-->
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">CARD#1</h4>
+                                <p class="category">SOMETHING something</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Bounce
+                                        <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">CARD#2</h4>
+                                <p class="category">something something</p>
+                            </div>
+                            <div class="content">
+                                <div id="chartHours" class="ct-chart"></div>
+                                <div class="footer">
+                                    <div class="legend">
+                                        <i class="fa fa-circle text-info"></i> Open
+                                        <i class="fa fa-circle text-danger"></i> Click
+                                        <i class="fa fa-circle text-warning"></i> Click Second Time
+                                    </div>
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-history"></i> Updated 3 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
 
 

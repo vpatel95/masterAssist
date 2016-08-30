@@ -10,11 +10,11 @@
   left: 0;
   width: 260px;
   display: block;
-  color: #767580;
+  color: #99e6ff;
   z-index: 5;
   background-size: cover;
   background-position: center center;
-  border-right: 1px solid #AAA9B0;
+  border-right: 2px solid #AAA9B0;
   text-align: center;
 }
 .sidebar .sidebar-wrapper {
@@ -43,7 +43,7 @@
 }
 .sidebar .logo p {
   float: left;
-  font-size: 20px;
+  font-size: 25px;
   margin: 10px 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -81,13 +81,12 @@ body > .navbar-collapse .logo {
 
 }
 .sidebar .nav li:hover > a {
-  background: rgba(255, 255, 255, 0.13);
+  background : rgba(255, 255, 255, 0.13);
   opacity: 1;
+ 
 }
-.sidebar .nav li.active > a {
-  color: #FFFFFF;
+.sidebar .nav li:active > a {
   opacity: 1;
-  background: rgba(255, 255, 255, 0.23);
 }
 .sidebar .nav p {
   margin: 0;
@@ -95,6 +94,7 @@ body > .navbar-collapse .logo {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #fff;
 }
 .sidebar .nav i {
   font-size: 28px;
@@ -110,8 +110,8 @@ body > .navbar-collapse .logo {
   padding: 10px 15px;
   
 }
-.sidebar .logo p,
-body > .navbar-collapse .logo p {
+.sidebar .logo ,
+body > .navbar-collapse .logo  {
   float: left;
   font-size: 20px;
   margin: 10px 10px;
@@ -163,22 +163,18 @@ body > .navbar-collapse:before {
 }
 .sidebar:after,
 body > .navbar-collapse:after {
-  background: #787878;
-  background: -moz-linear-gradient(top, #787878 0%, #343434 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #787878), color-stop(100%, #343434));
-  background: -webkit-linear-gradient(top, #787878 0%, #343434 100%);
-  background: -o-linear-gradient(top, #787878 0%, #343434 100%);
-  background: -ms-linear-gradient(top, #787878 0%, #343434 100%);
-  background: linear-gradient(to bottom, #787878 0%, #343434 100%);
+  background: #0c445d;
+  background: -moz-linear-gradient(top, #0c445d 40%, #360c5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #0c445d), color-stop(100%, #360c5));
+  background: -webkit-linear-gradient(top, #0c445d 40%, #360c5 100%);
+  background: -o-linear-gradient(top, #0c445d 40%, #360c5 100%);
+  background: -ms-linear-gradient(top, #0c445d 40%, #360c5 100%);
+  background: linear-gradient(to bottom, #0c445d 40%, #360c5 100%);
   background-size: 150% 150%;
   z-index: 3;
   opacity: 1;
 }
-.sidebar[data-image]:after, .sidebar.has-image:after,
-body > .navbar-collapse[data-image]:after,
-body > .navbar-collapse.has-image:after {
-  opacity: .77;
-}
+
 
 
 .main-panel {
