@@ -1,3 +1,17 @@
+@import 'https://fonts.googleapis.com/css?family=Oxygen';
+h1{
+	font-family: 'Oxygen', sans-serif;
+	color: ;
+	text-align: center;
+	font-size: 3.5em;
+}
+
+ h2{
+	font-family: 'Oxygen', sans-serif;
+	font-style: bold;
+	text-align: center;
+}
+
 .intro{
 	/*background-image: url(bg2.jpg);
 	background-size: cover;*/
@@ -80,6 +94,66 @@
 .error{
 	border: 1px solid red;
 }
+
+.introcontainer{
+	/*width: 100%;*/
+	height: 100vh;
+
+}
+
+
+
+.introhr{
+	text-align: center;
+	width: 18%;	
+	border: 2.2px solid #0e3b4f;
+}
+
+
+
+.f1 .fahover .fa-location-arrow:hover{
+	transform: scale(1.3);
+	opacity: 0.9;
+}
+i.fa.fa-location-arrow {
+    font-size: 50px;
+    text-align: center;
+    color: #103748;
+    transition: all .2s ease-in-out;
+}
+
+.f2 .fahover .fa-pencil-square:hover{
+	transform: scale(1.3);
+	opacity: 0.9;
+}
+i.fa.fa-pencil-square {
+    font-size: 50px;
+    color: #103748;
+    transition: all .2s ease-in-out;
+}
+
+.f3 .fahover .fa-plus-circle:hover{
+	transform: scale(1.3);
+	opacity: 0.9;
+}
+i.fa.fa-plus-circle {
+    font-size: 50px;
+    color: #103748;
+    transition: all .2s ease-in-out;
+}
+
+.fahover{
+	text-align: center;
+}
+
+.whatcontainer{
+	height: 100vh;
+}
+
+
+ 
+
+
 
 
 

@@ -4,12 +4,61 @@
 
 @section('content')
 <div class="container-fluid intro">
-    <div class="btngrp" style="position:fixed;top:15px;right:15px;display:inline-flex;">
+    <div class="btngrp" style="position:absolute;top:15px;right:15px;display:inline-flex;">
         <button type="button" class="btn btn-default btnreglogin" data-toggle="modal" data-target="#RegModal">REGISTER</button>
         <button type="button" class="btn btn-default btnreglogin" data-toggle="modal" data-target="#LoginModal" style="">LOGIN</button>
     </div>
     <h1 class="introhead">MASTER ASSIST<h2>  
 </div>
+
+<div class="container-fluid whatcontainer">
+    <h1>About MasterAssist</h1>
+</div>
+
+<div class="container introcontainer">
+        <h1 >Features</h1>
+        <hr class="introhr">
+        <div class="row " style="margin-top:5.5%;">
+           
+            <div class="col-sm-4 f1" >
+             <center></center><div class="fahover"><i class="fa fa-location-arrow" aria-hidden="true"></i></div></center>
+                <!--<img src="{{ URL::to('assets/login/img/teacher.png')}}" class="img-responsive teacherimg" " alt="Responsive image">-->
+                <h2 style="">Lorem Ipsum</h2>
+                <center><p>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren.</p></center>
+            </div>
+            <div class="col-sm-4 f2">
+             <div class="fahover"><i class="fa fa-pencil-square" aria-hidden="true"></i></div>
+                <h2 style="">Lorem Ipsum</h2>
+                <center><p>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren.</p></center>
+            </div>    
+            <div class="col-sm-4 f3">
+            <div class="fahover"> <i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+                <h2 style="">Lorem Ipsum</h2>
+                <center><p>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren.</p></center>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:7%;">
+            <div class="col-sm-4 f1" >
+                <!--<img src="{{ URL::to('assets/login/img/teacher.png')}}" class="img-responsive teacherimg" " alt="Responsive image">-->
+                <div class="fahover"> <i class="fa fa-location-arrow" aria-hidden="true" ></i></div>
+                <h2 style="">Lorem Ipsum</h2>
+                <center><p>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren.</p></center>
+            </div>
+            <div class="col-sm-4 f2">
+               <div class="fahover"> <i class="fa fa-pencil-square" aria-hidden="true" ></i></div>
+                <h2 style="">Lorem Ipsum</h2>
+                <center><p>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren.</p></center>
+            </div>    
+            <div class="col-sm-4 f3">
+                <div class="fahover"><i class="fa fa-plus-circle" aria-hidden="true" ></i></div>
+                <h2 style="">Lorem Ipsum</h2>
+                <center><p>loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren.</p></center>
+            </div>
+        </div>
+</div>
+
+
 
 <div id="RegModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -17,7 +66,6 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header" >
-           
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title" >REGISTER</h4>
             </div>
