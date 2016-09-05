@@ -3,5 +3,5 @@
 @section('title', 'Welcome to MasterAssist')
 
 @section('content')
-lol
+content goes here
 @endsection
