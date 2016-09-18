@@ -49,4 +49,16 @@ Route::group(['middleware' => ['web']], function() {
 		'middleware' => 'auth',
 		'as' => 'student.data'
 	]);
+
+	Route::get('teacher/fillprofile', [
+		'uses' => 'UserController@fillTeacher',
+		'middleware' => 'auth',
+		'as' => 'teacher.fill'
+	]);
+
+	Route::post('teacher/data', [
+		'uses' => 'DataController@teacherData',
+		'middleware' => 'auth',
+		'as' => 'teacher.data'
+	]);
 });

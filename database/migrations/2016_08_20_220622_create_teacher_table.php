@@ -18,6 +18,7 @@ class CreateTeacherTable extends Migration
             $table->string('teacher_id')->unique();
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('email');
             $table->string('branch');
             $table->string('designation');
             $table->integer('user_id');

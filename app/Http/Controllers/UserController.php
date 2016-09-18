@@ -89,4 +89,13 @@ class UserController extends Controller
             return view('student.getdata', ['user' => Auth::user()]);
     }
 
+    public function fillTeacher() {
+        $user = Auth::user();
+
+        if($user->filled == 1)
+            return redirect()->route('dashboard');
+        else
+            return view('teacher.getdata', ['user' => Auth::user()]);
+    }
+
 }
