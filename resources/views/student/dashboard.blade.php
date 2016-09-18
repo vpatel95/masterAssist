@@ -72,13 +72,19 @@
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
+                            <a href="">
+                                
+                            </a>
+                        </li>
+                        </li>
+                        <li>
                            <a href="">
                                Home
                             </a>
                         </li>
                         
                         <li>
-                            <a href="#">
+                            <a href="{{ route('logout') }}">
                                 Log out
                             </a>
                         </li>

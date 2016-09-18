@@ -21,6 +21,7 @@ class CreateStudentTable extends Migration
             $table->string('branch');
             $table->integer('semester');
             $table->integer('year');
+            $table->integer('user_id');
             
             $table->timestamps();
             $table->rememberToken();

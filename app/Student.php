@@ -9,5 +9,4 @@ class Student extends Model {
     public function courses() {
     	return $this->belongsToMany('App\Course');
     }
-
 }

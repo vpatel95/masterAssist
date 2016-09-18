@@ -20,7 +20,8 @@ class CreateTeacherTable extends Migration
             $table->string('last_name');
             $table->string('branch');
             $table->string('designation');
-
+            $table->integer('user_id');
+            
             $table->rememberToken();
         });
     }

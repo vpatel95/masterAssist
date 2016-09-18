@@ -37,7 +37,12 @@ class UserController extends Controller
 
     	Auth::login($user);
 
-       	return redirect()->route('dashboard');
+       	$user = Auth::user();
+        $category = $user->getRole();
+        if($category == 'student')
+            return redirect()->route('student.fill');
+        else
+            return redirect()->route('teacher.fill');
     }
 
     public function login(Request $request) {
@@ -48,10 +53,21 @@ class UserController extends Controller
     	]);
 
     	if(Auth::attempt(['email' => $request['email'], 'password' => $request['password']])) {
-    		return redirect()->route('dashboard');
+            $user = Auth::user();
+            $category = $user->getRole();
+            if($category == 'student')
+    		    return redirect()->route('student.fill');
+            else
+                return redirect()->route('teacher.fill');
     	}
 
     	return redirect()->back();
+    }
+
+    public function logout() {
+        Auth::logout();
+
+        return redirect()->route('home');
     }
 
     public function getDashboard() {
@@ -63,4 +79,14 @@ class UserController extends Controller
         return view($uri, ['user' => Auth::user()]);
 
     }
+
+    public function fillStudent() {
+        $user = Auth::user();
+
+        if($user->filled == 1)
+            return redirect()->route('dashboard');
+        else
+            return view('student.getdata', ['user' => Auth::user()]);
+    }
+
 }

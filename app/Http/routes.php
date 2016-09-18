@@ -15,11 +15,16 @@ Route::group(['middleware' => ['web']], function() {
 
 	Route::get('/', function() {
 		return view('login.pages.welcome');
-	});
+	})->name('home');
 
 	Route::post('/login', [
 		'uses' => 'UserController@login',
 		'as' => 'login'
+	]);
+
+	Route::get('/logout', [
+		'uses' => 'UserController@logout',
+		'as' => 'logout'
 	]);
 
 	Route::post('/register', [
@@ -33,8 +38,15 @@ Route::group(['middleware' => ['web']], function() {
 		'as' => 'dashboard'
 	]);
 
-	Route::post('username', [
-		'uses' => 'UserController@username',
-		'as' => 'username'
+	Route::get('student/fillprofile', [
+		'uses' => 'UserController@fillStudent',
+		'middleware' => 'auth',
+		'as' => 'student.fill'
+	]);
+
+	Route::post('student/data', [
+		'uses' => 'DataController@studentData',
+		'middleware' => 'auth',
+		'as' => 'student.data'
 	]);
 });
