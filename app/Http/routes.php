@@ -61,4 +61,9 @@ Route::group(['middleware' => ['web']], function() {
 		'middleware' => 'auth',
 		'as' => 'teacher.data'
 	]);
+
+	Route::get('teacher/{id}', [
+		'uses' => 'ProfileController@show',
+		'as' => 'teacher.profile'
+	]);
 });
