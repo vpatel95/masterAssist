@@ -100,7 +100,9 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">CARD#1</h4>
+                                <a href="{{ route('student.profile', '1') }}">
+                                    <h4 class="title">CARD#1</h4>
+                                </a>
                                 <p class="category">SOMETHING something</p>
                             </div>
                             <div class="content">
@@ -121,7 +123,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-md-4">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">CARD#2</h4>

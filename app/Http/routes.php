@@ -63,7 +63,12 @@ Route::group(['middleware' => ['web']], function() {
 	]);
 
 	Route::get('teacher/{id}', [
-		'uses' => 'ProfileController@show',
+		'uses' => 'ProfileController@teacherShow',
 		'as' => 'teacher.profile'
+	]);
+
+	Route::get('student/{id}', [
+		'uses' => 'ProfileController@studentShow',
+		'as' => 'student.profile'
 	]);
 });
