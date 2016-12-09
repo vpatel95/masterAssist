@@ -8,7 +8,7 @@
         <button type="button" class="btn btn-default btnreglogin" data-toggle="modal" data-target="#RegModal">REGISTER</button>
         <button type="button" class="btn btn-default btnreglogin" data-toggle="modal" data-target="#LoginModal" style="">LOGIN</button>
     </div>
-    <h1 class="introhead">MASTER ASSIST<h2>  
+    <h1 class="introhead">MASTER ASSIST<h1>  
 </div>
 
 <div class="container-fluid whatcontainer">
