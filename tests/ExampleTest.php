@@ -13,6 +13,7 @@ class ExampleTest extends TestCase
      */
     public function testBasicExample()
     {
-        $this->visitRoute('home');
+        $this->visit('/')
+             ->visitRoute('home');
     }
 }
