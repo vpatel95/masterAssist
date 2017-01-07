@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>@yield('title')</title>
+	<head>
+		<title>@yield('title')</title>
 
-	@include('login.includes.metastyles')
+		@include('login.includes.metastyles')
 
-</head>
-<body>
-	<main>
-		@yield('content')
-	</main>
+	</head>
+	<body>
+		<main>
+			@yield('content')
+		</main>
 
-	@include('login.includes.scripts')
-</body>
+		@include('login.includes.scripts')
+	</body>
 </html>
